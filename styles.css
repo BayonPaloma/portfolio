@@ -67,16 +67,16 @@ h1 {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-} /*ya*/
+}
 
 h3 {
   font-weight: 300;
-} /*ya*/
+}
 
 a {
   text-decoration: none;
   color: inherit;
-} /*ya*/
+}
 
 .marco {
   width: 90%;
@@ -107,9 +107,6 @@ a {
 
 #inicio {
   background-color: #e5ebeb;
-
-  /*animation: enderezarEsquinas linear;
-  animation-timeline: scroll();*/
 }
 
 #servicios {
@@ -149,7 +146,7 @@ nav {
 
 .menu {
   display: flex;
-  list-style: none; /*ya*/
+  list-style: none;
   gap: 20px;
 }
 
@@ -486,18 +483,17 @@ form {
   font-size: 14px;
 }
 
-/* Estilo de los campos de entrada (Inputs y Textarea) */
 .form-group input,
 .form-group textarea {
   width: 100%;
   padding: 15px;
   margin-bottom: 20px;
   border: none;
-  background-color: #f0f1ff; /* Verde muy pálido */
+  background-color: #f0f1ff;
   border-radius: 20px;
   font-size: 14px;
   color: #666;
-  box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+  box-sizing: border-box;
 }
 
 .fila {
@@ -510,17 +506,16 @@ form {
 }
 
 .mensaje {
-  flex: 1; /* 🔥 ocupa todo el espacio restante */
+  flex: 1;
   display: flex;
   flex-direction: column;
 }
 
 .mensaje textarea {
-  flex: 1; /* 🔥 crece en altura */
-  resize: none; /* opcional */
+  flex: 1;
+  resize: none;
 }
 
-/* Placeholder con color suave */
 ::placeholder {
   color: #c3c0dc;
 }
@@ -562,7 +557,7 @@ form {
 }
 
 .whatsapp-float:hover {
-  background-color: #128c7e; /* Cambio de color al pasar el mouse */
+  background-color: #128c7e;
 }
 
 footer {
@@ -604,7 +599,7 @@ footer.visible {
   }
 
   .tarjeta-grande {
-    grid-column: span 2; /* ocupa todo el ancho */
+    grid-column: span 2;
     grid-row: auto;
   }
 }
@@ -818,7 +813,7 @@ footer.visible {
   .tarjeta-grande {
     grid-column: span 1;
     grid-row: auto;
-    padding: 20px; /* opcional: para que no sea tan gigante en mobile */
+    padding: 20px;
   }
 
   .tarjetita p {
@@ -835,5 +830,102 @@ footer.visible {
 
   .contenedor-cards {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  #sobre-mi {
+    padding: 20px 0 40px 0;
+  }
+
+  #sobre-mi svg {
+    top: 0;
+    height: auto;
+    max-height: 200px;
+  }
+
+  .contenedor-sobre-mi {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  #sobre-mi h1,
+  #sobre-mi h2 {
+    font-size: 38px;
+    text-align: center;
+  }
+
+  .texto {
+    padding: 20px 10px;
+    text-align: left;
+    width: 100%;
+  }
+
+  .texto h3 {
+    font-size: 1.05rem;
+    line-height: 1.5;
+  }
+
+  .texto p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .texto .cuadrado-redondeado {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .imagen-sobre-mi {
+    width: 80%;
+    max-width: 280px;
+    margin: 30px auto 0 auto;
+    order: -1;
+  }
+
+  .imagen-sobre-mi img {
+    border-top-right-radius: 120px;
+    border-top-left-radius: 120px;
+  }
+
+  #contacto {
+    padding: 40px 16px;
+    height: auto;
+  }
+
+  #contacto h1 {
+    font-size: 36px;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  .form-container {
+    width: 90%;
+    border-radius: 20px;
+    height: auto;
+  }
+
+  .fila {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 12px 15px;
+    margin-bottom: 16px;
+    font-size: 15px;
+  }
+
+  .mensaje textarea {
+    min-height: 120px;
+  }
+
+  .btn-submit {
+    padding: 14px;
+    font-size: 15px;
+    margin-top: 8px;
   }
 }

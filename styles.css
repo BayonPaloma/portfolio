@@ -824,12 +824,24 @@ footer.visible {
     width: 80%;
   }
 
+  .encabezado-proyectos h1 {
+    font-size: 50px;
+  }
+
   .encabezado-proyectos p {
     font-size: 20px;
   }
 
   .contenedor-cards {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .icono-wrapper {
+    align-self: center;
+  }
+
+  .contenido-tarjeta {
+    text-align: center;
   }
 
   #sobre-mi {
@@ -861,12 +873,12 @@ footer.visible {
   }
 
   .texto h3 {
-    font-size: 1.05rem;
+    font-size: 1.2rem;
     line-height: 1.5;
   }
 
   .texto p {
-    font-size: 0.95rem;
+    font-size: 1.2rem;
     line-height: 1.6;
   }
 
@@ -876,6 +888,7 @@ footer.visible {
     width: 100%;
     margin-top: 20px;
     text-align: center;
+    font-size: 1.2rem;
   }
 
   .imagen-sobre-mi {
